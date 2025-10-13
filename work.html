@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Work • Ryan Weeks</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+  <meta name="description" content="Projects by Ryan Weeks." />
+</head>
+<body>
+  <header class="container header">
+    <a class="logo" href="./">RW</a>
+    <nav class="nav">
+      <a href="./">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Work</h1>
+      <p class="tagline">Recent projects. Short, focused, and outcome-oriented.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card" id="steam-reviews-sentiment-nlp">
+        <h3>Steam Reviews Sentiment NLP</h3>
+        <p><strong>Goal:</strong> Classify “recommended” vs “not recommended” from Steam review text and surface interpretable patterns.</p>
+        <p><strong>Highlights:</strong> Token-level features, spaCy pipeline, error analysis to improve false positives.</p>
+        <p><strong>Stack:</strong> Python, spaCy, scikit-learn, Matplotlib</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card" id="wine-quality-predictor">
+        <h3>Wine Quality Predictor</h3>
+        <p><strong>Goal:</strong> Predict wine quality using Random Forest.</p>
+        <p><strong>Highlights:</strong> SMOTE for class balance, feature importance, Streamlit UI for quick trials.</p>
+        <p><strong>Stack:</strong> Python, scikit-learn, imbalanced-learn, Streamlit</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="#">Streamlit App</a>
+        </div>
+      </article>
+
+      <article class="card" id="yelp-recommender-wip">
+        <h3>Yelp Recommender (WIP)</h3>
+        <p><strong>Goal:</strong> Curate restaurants by price tiers with review snippets and filters.</p>
+        <p><strong>Highlights:</strong> Cleaned Yelp Open Dataset, simple recommender logic, UI design notes.</p>
+        <p><strong>Stack:</strong> Python, pandas, Plotly/Matplotlib, Streamlit</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card" id="weather-outfit">
+        <h3>Weather-Based Outfit Recommender</h3>
+        <p><strong>Goal:</strong> Recommend outfits from forecast data.</p>
+        <p><strong>Highlights:</strong> Open-Meteo API, lat/long lookup, readable AM/PM charts.</p>
+        <p><strong>Stack:</strong> Python, requests, Matplotlib, Streamlit</p>
+        <div class="links">
+          <a href="#">GitHub</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="y"></span> Ryan Weeks · <a href="mailto:skeew0813@gmail.com">Email</a> · <a href="https://github.com/skeew0813">GitHub</a> · <a href="https://www.linkedin.com/in/ryan-weeks-a9364b129/">LinkedIn</a></small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
