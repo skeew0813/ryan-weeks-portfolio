@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ryan Weeks • Data Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.png" />
+  <meta name="description" content="Data portfolio of Ryan Weeks: NLP, classification models, dashboards, and Streamlit apps." />
+</head>
+<body>
+  <header class="container header">
+    <a class="logo" href="/">RW</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="about.md">About</a>
+      <a href="work.md">Work</a>
+      <a href="contact.md">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Hi, I'm <span class="accent">Ryan Weeks</span></h1>
+      <p class="tagline">I turn messy data into clear, decision-ready insights.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="work.md">View Projects</a>
+        <a class="btn" href="about.md">About Me</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Steam Reviews Sentiment NLP</h3>
+        <p>Text pipeline to classify recommended vs not recommended, with visuals and error analysis.</p>
+        <ul class="tags"><li>NLP</li><li>spaCy</li><li>Visualization</li></ul>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="work.md#steam-reviews-sentiment-nlp">Case Study</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Wine Quality Predictor</h3>
+        <p>Random Forest + SMOTE for class balancing with a simple Streamlit app.</p>
+        <ul class="tags"><li>Classification</li><li>SMOTE</li><li>Streamlit</li></ul>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="work.md#wine-quality-predictor">Case Study</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Yelp Recommender (WIP)</h3>
+        <p>Curates high, mid, and low price picks with review snippets and filters.</p>
+        <ul class="tags"><li>EDA</li><li>Recommender</li><li>UI</li></ul>
+        <div class="links">
+          <a href="#">GitHub</a>
+          <a href="work.md#yelp-recommender-wip">Case Study</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="cta">
+      <h2>Only have two minutes?</h2>
+      <p>Start with Steam Reviews or Wine Quality Predictor.</p>
+      <a class="btn primary" href="work.md">Go to Work</a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="y"></span> Ryan Weeks · <a href="mailto:skeew0813@gmail.com">Email</a> · <a href="https://github.com/skeew0813">GitHub</a> · <a href="https://www.linkedin.com/in/ryan-weeks-a9364b129/">LinkedIn</a></small>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
