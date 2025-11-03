@@ -25,3 +25,13 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6
 .footer{padding:36px 0;color:var(--muted);text-align:center}
 @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
 @media (max-width:600px){.grid{grid-template-columns:1fr}.hero h1{font-size:32px}}
+/* Featured badge */
+.badge {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  opacity: 0.75;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
