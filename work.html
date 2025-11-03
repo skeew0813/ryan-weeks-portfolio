@@ -26,6 +26,18 @@
     </section>
 
     <section class="grid">
+      <!-- Global Temperature Trends (now first) -->
+      <article class="card" id="globaltemp-case">
+        <h3>Global Temperature Trends</h3>
+        <p><strong>Goal:</strong> Quantify uneven warming rates by continent, visualize long and short term trends, and compare forecasts.</p>
+        <p><strong>Highlights:</strong> Anomaly calculations vs 1951–1980 baseline, continental slope estimates (°C per century), Prophet vs ARIMA RMSE, forecast visuals with confidence intervals, and ethical notes on uncertainty and early data quality.</p>
+        <p><strong>Stack:</strong> Python, pandas, Matplotlib, statsmodels, Prophet</p>
+        <div class="links">
+          <a href="https://github.com/skeew0813/GlobalTemp-Climate-Trends" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Steam Reviews Sentiment NLP -->
       <article class="card" id="steam-reviews-sentiment-nlp">
         <h3>Steam Reviews Sentiment NLP</h3>
         <p><strong>Goal:</strong> Classify “recommended” vs “not recommended” from Steam review text and surface interpretable patterns.</p>
@@ -36,6 +48,7 @@
         </div>
       </article>
 
+      <!-- Wine Quality Predictor -->
       <article class="card" id="wine-quality-predictor">
         <h3>Wine Quality Predictor</h3>
         <p><strong>Goal:</strong> Predict wine quality using Random Forest.</p>
@@ -47,6 +60,7 @@
         </div>
       </article>
 
+      <!-- Yelp Recommender (WIP) -->
       <article class="card" id="yelp-recommender-wip">
         <h3>Yelp Recommender (WIP)</h3>
         <p><strong>Goal:</strong> Curate restaurants by price tiers with review snippets and filters.</p>
@@ -57,6 +71,7 @@
         </div>
       </article>
 
+      <!-- Weather-Based Outfit Recommender -->
       <article class="card" id="weather-outfit">
         <h3>Weather-Based Outfit Recommender</h3>
         <p><strong>Goal:</strong> Recommend outfits from forecast data.</p>
@@ -72,6 +87,9 @@
   <footer class="container footer">
     <small>© <span id="y"></span> Ryan Weeks · <a href="mailto:skeew0813@gmail.com">Email</a> · <a href="https://github.com/skeew0813">GitHub</a> · <a href="https://www.linkedin.com/in/ryan-weeks-a9364b129/">LinkedIn</a></small>
   </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
