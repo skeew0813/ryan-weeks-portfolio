@@ -7,17 +7,20 @@
   --line:#1d2130;
 }
 
-/* Reset & layout */
-*{ box-sizing:border-box; }
+/* Reset and layout */
+*{
+  box-sizing:border-box;
+}
 
-html, body{
+html,
+body{
   margin:0;
   padding:0;
   color:var(--ink);
   font:16px/1.6 system-ui, Segoe UI, Roboto, Arial;
 }
 
-/* Soft mint edges */
+/* Soft mint edges with dark center */
 body{
   background:
     radial-gradient(circle at 0% 50%, rgba(118,224,184,0.22), transparent 65%),
@@ -25,7 +28,7 @@ body{
     var(--bg);
 }
 
-/* Sticky full-width header (dark glass) */
+/* Sticky full-width header with dark glass look */
 .header{
   position:sticky;
   top:0;
@@ -36,6 +39,7 @@ body{
   border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
+/* Inner header content centered to match body width */
 .header-inner{
   max-width:1200px;
   margin:0 auto;
@@ -45,7 +49,7 @@ body{
   align-items:center;
 }
 
-/* Logo & nav */
+/* Logo and nav */
 .logo{
   display:inline-block;
   background:var(--accent);
@@ -62,16 +66,18 @@ body{
   margin-left:16px;
 }
 
-.nav a:hover{ color:var(--accent); }
+.nav a:hover{
+  color:var(--accent);
+}
 
-/* Layout containers */
+/* Layout container for main and footer content */
 .container{
   max-width:1200px;
   margin:0 auto;
   padding:20px;
 }
 
-/* Hero ----------------------------------------------------------- */
+/* Hero */
 .hero{
   padding:60px 0 24px;
 }
@@ -81,7 +87,9 @@ body{
   margin:0 0 8px;
 }
 
-.accent{ color:var(--accent); }
+.accent{
+  color:var(--accent);
+}
 
 .tagline{
   color:var(--muted);
@@ -103,15 +111,19 @@ body{
   color:var(--ink);
   background:transparent;
 }
+
 .btn.primary{
   background:var(--accent);
   color:#0b0c10;
   border-color:transparent;
   font-weight:600;
 }
-.btn:hover{ border-color:var(--accent); }
 
-/* Cards & Grid --------------------------------------------------- */
+.btn:hover{
+  border-color:var(--accent);
+}
+
+/* Grid and cards */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
@@ -126,39 +138,31 @@ body{
   padding:18px;
 }
 
-/* --------------------------------------------------------------- */
-/* Project titles — white + SOFT mint underline + no wrapping     */
-/* --------------------------------------------------------------- */
+/* Project titles – white text with soft mint underline */
 .card h3{
   margin-top:0;
   margin-bottom:10px;
   font-size:1.1rem;
   font-weight:700;
-
-  color:var(--ink) !important;
-
-  /* Soft mint underline */
-  border-bottom:1px solid rgba(118,224,184,0.45);
-  padding-bottom:3px;
-
-  /* Keep title + Featured badge on one line */
-  white-space:nowrap;
-  overflow:hidden;
+  color:var(--ink);
+  border-bottom:1px solid rgba(118,224,184,0.4);
+  padding-bottom:4px;
+  display:inline-block;
 }
 
 /* Card body text */
 .card p{
   margin:6px 0;
-  color:var(--muted) !important;
+  color:var(--muted);
 }
 
-/* Goal / Highlights / Stack labels */
+/* Labels like Goal / Highlights / Stack */
 .card p strong{
-  color:var(--ink) !important;
+  color:var(--ink);
   font-weight:600;
 }
 
-/* Tags ---------------------------------------------------------- */
+/* Tags */
 .tags{
   display:flex;
   flex-wrap:wrap;
@@ -182,7 +186,10 @@ body{
   color:var(--accent);
   text-decoration:none;
 }
-.links a:hover{ text-decoration:underline; }
+
+.links a:hover{
+  text-decoration:underline;
+}
 
 /* CTA block */
 .cta{
@@ -200,20 +207,31 @@ body{
   text-align:center;
 }
 
-/* About Page – REMOVE underlines & make section titles mint */
-.card h3{
-  border:none !important;
-  color:var(--accent) !important;
+/* About page section headings */
+.section-heading{
+  margin-top:18px;
+  margin-bottom:8px;
+  font-size:1rem;
+  font-weight:600;
+  color:var(--accent);
+  border:none;
+  padding-bottom:0;
 }
 
 /* Responsive */
 @media (max-width:900px){
-  .grid{ grid-template-columns:1fr 1fr; }
+  .grid{
+    grid-template-columns:1fr 1fr;
+  }
 }
 
 @media (max-width:600px){
-  .grid{ grid-template-columns:1fr; }
-  .hero h1{ font-size:32px; }
+  .grid{
+    grid-template-columns:1fr;
+  }
+  .hero h1{
+    font-size:32px;
+  }
 }
 
 /* Featured badge */
