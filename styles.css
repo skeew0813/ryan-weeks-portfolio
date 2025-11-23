@@ -40,4 +40,33 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6
   cursor: default;
   text-decoration: none;
 }
+/* --- Soft Mint Side Glows --- */
+body {
+  background: #000000;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 22vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(60px);
+  opacity: 0.35;
+}
+
+body::before {
+  left: 0;
+  background: linear-gradient(to right, #86ffd7, transparent);
+}
+
+body::after {
+  right: 0;
+  background: linear-gradient(to left, #86ffd7, transparent);
+}
 
