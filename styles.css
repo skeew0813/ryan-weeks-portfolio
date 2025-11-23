@@ -35,3 +35,9 @@ html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:16px/1.6
   margin-left: 0.35rem;
   vertical-align: middle;
 }
+.link-disabled {
+  opacity: 0.5;
+  cursor: default;
+  text-decoration: none;
+}
+
